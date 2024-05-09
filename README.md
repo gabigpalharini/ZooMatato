@@ -22,7 +22,7 @@
 
 6. Acessar o Visual Studio Code
 
-code .
+   code .
 
 
 
