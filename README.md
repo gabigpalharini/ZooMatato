@@ -1,24 +1,24 @@
 1. Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
 
-git clone https://github.com/gabigpalharini/ZooMatato.git
+   git clone https://github.com/gabigpalharini/ZooMatato.git
 
 2. Acesse o diretório do projeto:
 
-cd ZooMatato
+   cd ZooMatato
 
 3. Inicializando o Repositorio
 
-composer update
+   composer update
 
 4. Copiando o .env do exemplo
 
-copy .env.example .env
+   copy .env.example .env
 
 5. Nome e E-mail
 
-git config  --global user.name "gabigpalharini"
+   git config  --global user.name "gabigpalharini"
 
-git config --global user.email "gabigplharini@gmail.com"
+   git config --global user.email "gabigplharini@gmail.com"
 
 6. Acessar o Visual Studio Code
 
