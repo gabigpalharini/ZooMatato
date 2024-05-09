@@ -11,7 +11,7 @@ class CadastroAnimalController extends Controller
 {
     public function animal(AnimalFormRequest $request){
         $animal = Animal::create([
-            'name' => $request->name,
+            'nome' => $request->nome,
             'especie' => $request->especie,
             'peso' => $request->peso,
             'altura' => $request->altura,
@@ -42,7 +42,7 @@ class CadastroAnimalController extends Controller
         ]);
     }
     public function animalNome(Request $request){
-        $animal = Animal::where('name', 'like', '%' . $request->nome . '%')->get();
+        $animal = Animal::where('nome', 'like', '%' . $request->nome . '%')->get();
         if(count($animal) > 0){
             return response()->json([
                 'status' => true,
@@ -117,8 +117,8 @@ class CadastroAnimalController extends Controller
                     'message' => "Animal não encontrado"
                 ]);
             }
-            if(isset($request->name)){
-                $animal->name = $request->name;
+            if(isset($request->nome)){
+                $animal->nome = $request->nome;
             }
             if(isset($request->especie)){
                 $animal->especie = $request->especie;
