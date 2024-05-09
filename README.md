@@ -11,10 +11,12 @@ composer update
 copy .env.example .env
 
 5. Nome e E-mail
+
 git config  --global user.name "gabigpalharini"
 git config --global user.email "gabigplharini@gmail.com"
 
 6. Acessar o Visual Studio Code
+
 code .
 
 
